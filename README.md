@@ -1,7 +1,7 @@
 # Aulas de CSharp na turma 1a Etapa 2018 CIC Noite
 
 Exemplos criados durante as aulas de CSharp.
-
+TESTE CAUE
 
 TODO: Corrigir pre requisitos.
 ## Pré Requisitos
