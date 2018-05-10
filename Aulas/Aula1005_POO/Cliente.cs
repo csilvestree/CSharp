@@ -4,8 +4,26 @@ namespace Aula1005_POO
 {
     class Cliente : Pessoa
     {
+        private int anos;
 
-        public DateTime DataNas { get; set; }
+        public DateTime DataNasc { get; set; }
+    
+        public string DataQueNasceu
+        {
+            get
+            {
+                return DataNasc.ToShortDateString();
+            }
+        }
+
+        public int Idade
+        {
+            get
+            {
+                return DateTime.Today.Year - DataNasc.Year;
+
+            }
+        }
 
         public Cliente()
         {

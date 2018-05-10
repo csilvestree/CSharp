@@ -23,7 +23,8 @@ namespace Aula1005_POO
 
             Cliente cli3 = new Cliente("Juciliuda", "123"); //nome, cpf
             Console.WriteLine("cli3.nome: " + cli3.Nome + " cli3.cpf: " + cli3.Cpf);
-
+            cli3.DataNasc = new DateTime(1999, 05, 05);
+            Console.WriteLine($"{ cli3.Nome } Tem { cli3.Idade } anos");
             //Pessoa p = new Pessoa(); // ERRO: classes abstratas não podem ser instanciadas
 
             Console.ReadKey();
