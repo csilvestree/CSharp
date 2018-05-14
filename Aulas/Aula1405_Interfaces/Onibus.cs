@@ -1,34 +1,32 @@
-﻿using System;
-
-namespace Aula1405_Interfaces
+﻿namespace Aula1405_Interfaces
 {
-    class Carro : IMeioTransporte
+    class Onibus : IMeioTransporte
     {
         public int Velocidade { get; set; }
+
         //Chave para objeto marca
         public int MarcaID { get; set; }
 
         //Propiedade de navegação
         public virtual Marca _Marca { get; set; }
-
-        public Carro()
+        public Onibus()
         {
             Velocidade = 0;
         }
-
         public void Acelerar()
         {
-            Velocidade += 10;
-        }s
-
+            Velocidade += 6;
+        }
         public void Desacelerar()
         {
-            Velocidade -= 5;
+            Velocidade -= 3;
         }
 
         public string ImprimirInfo()
         {
-            return $"Carro, velocidade atual: {Velocidade}";
+            return $"Ônibus, velocidade atual: {Velocidade}";
+
         }
+        
     }
 }

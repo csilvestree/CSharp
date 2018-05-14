@@ -1,10 +1,12 @@
 ﻿namespace Aula1405_Interfaces
 {
-    interface IMeioTransporte
+    public interface IMeioTransporte
     {
+        int Velocidade { get; set; }
         void Acelerar();
         void Desacelerar();
 
+        string ImprimirInfo();
 
     }
 }
