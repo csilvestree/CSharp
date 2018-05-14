@@ -7,6 +7,7 @@
         //Chave para objeto marca
         public int MarcaID { get; set; }
 
+        public string Modelo { get; set; }
         //Propiedade de navegação
         public virtual Marca _Marca { get; set; }
         public Onibus()
